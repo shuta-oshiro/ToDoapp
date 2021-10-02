@@ -1,0 +1,78 @@
+h1 {    /*見出し*/
+    position: relative;
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding:0.2em 0.5em;
+      
+}
+
+body{   /*全体*/
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+	background-image:
+		repeating-linear-gradient(0deg, rgba(236, 248, 71, 0.3)0px 10px,rgba(253, 253, 249, 0.3)   10px 20px),
+		repeating-linear-gradient(90deg, rgba(236, 248, 71, 0.3)0px 10px,rgba(253, 253, 249, 0.3)   10px 20px);
+}
+
+a{ /*タスク追加のボタン*/
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #41b13d;
+    border: solid 2px #41b13d;
+    background:rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: .4s;
+}
+  
+a:hover {
+    background: #41b13d;
+    color: white;
+}
+button{ /*タスク完了のボタン*/
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #ff6767;
+    border: solid 2px #ff6c67;
+    border-radius: 3px;
+    transition: .4s;
+}
+  
+button:hover {
+    background: #ff6767;
+    color: white;
+}
+table{
+    border-collapse:collapse;
+}
+
+td{
+    color: #404040;
+    background: whitesmoke;
+    border-bottom: solid 6px #b3b2b2;
+    height: 10px;
+}
+td.title{
+    color: #404040;
+    
+    border-left: inset 10px rgb(223, 120, 134);
+    border-bottom: solid 6px #b3b2b2;
+    
+    
+    background: whitesmoke;
+    
+    line-height: 3;
+    padding: 0.5em;
+    font-weight: bold;
+    width: 400px;
+}
+input.naiyou{
+    margin: 0;
+    height: 50px;
+    width:600px;
+}
+
+

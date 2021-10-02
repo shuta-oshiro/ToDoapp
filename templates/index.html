@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ToDoアプリ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  
+  <body>
+    <h1>やるべきこと一覧</h1>
+    <a href="{{url_for('form')}}">タスク追加</a>
+    <p></p>
+
+      {% if tasks == [] %}
+        <p>すべてやり遂げました。おめでとう！</p>
+      {% else %}
+      <form method="post" action="{{ url_for('eraser')}}">
+        <style>#example{margin:auto;}</style>
+        <table id = "example" style="border: none;">
+          
+          {% for task in tasks %}
+            <tr>
+              <td class="title" align="left">{{task.title}}</td>
+              <td><button type="submit" name="kanryou"value={{task.rowid}}>完了</button></td>
+              <td>{{task.priority}}</td>
+            </tr>
+          {% endfor %}
+
+        </table>
+      </form>
+      {% endif %}
+      
+  </body>
+  
+</html>

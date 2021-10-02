@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <title>ToDoアプリ</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+        <h1>タスクの追加</h1>
+        <form method="post" action="{{ url_for('register')}}">
+            <style>#example{margin:auto;}</style>
+            <table id = "example" border="1">
+                <tr>
+                    <td ><input class="naiyou"type="text" name="title"placeholder="タスクの内容を記入してください" ></td>
+                    <td><input type="text" name="priority" placeholder="優先度　例：★"></td>
+                     
+                </tr>
+            </table>
+            <br>
+           <input type="submit" value="追加"> 
+            
+        </form>
+    </body>
+</html>
