@@ -1,0 +1,16 @@
+click==8.0.1
+Flask==2.0.1
+Flask-SQLAlchemy==2.5.1
+gunicorn==20.1.0
+importlib-metadata==3.4.0
+itsdangerous==2.0.1
+jedi==0.18.0
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+packaging==20.9
+pipenv==2021.5.29
+PuLP==2.4
+requests==2.24.0
+sqlparse==0.4.1
+Werkzeug==2.0.1
+
